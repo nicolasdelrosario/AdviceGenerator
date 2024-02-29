@@ -1,4 +1,6 @@
 import getData from "./api/requests.js";
+const generateNewAdvice = document.getElementById('generateAdvice')
+generateNewAdvice.addEventListener('click', displayData)
 
 async function displayData() {
   const title = document.getElementById('adviceTitle')

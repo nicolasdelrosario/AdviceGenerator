@@ -41,6 +41,7 @@
   left: calc(50% - 24px);
   position: absolute;
   width: 48px;
+  cursor: pointer;
 }
 
 .advice__bg-divider {
