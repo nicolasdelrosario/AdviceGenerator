@@ -1,0 +1,64 @@
+.advice__section {
+  place-content: center;
+  display: grid;
+  min-height: 100vh;
+}
+
+.advice__card {
+  background-color: var(--dark-grayish-blue);
+  border-radius: 16px;
+  max-width: 340px;
+  padding: 1rem;
+  position: relative;
+  min-height: 333px;
+}
+
+.advice__text {
+  color: var(--neon-green);
+  letter-spacing: .25rem;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-bold);
+}
+
+.advice__title {
+  color: var(--light-cyan);
+  font-weight: var(--font-bold);
+  line-height: 2.5rem;
+  padding: 0 2rem;
+  word-break: break-word;
+}
+
+.advice__img-container {
+  align-content: center;
+  background-color: var(--neon-green);
+  border-radius: 50%;
+  bottom: -24px;
+  display: grid;
+  height: 48px;
+  justify-content: center;
+  left: calc(50% - 24px);
+  position: absolute;
+  width: 48px;
+}
+
+.advice__bg-divider {
+  background-image: url("../../images/pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .advice__card {
+    max-width: 500px;
+    padding: 2rem;
+  }
+
+  .advice__bg-divider {
+    background-image: url("../../images/pattern-divider-desktop.svg");
+  }
+}
